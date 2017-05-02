@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>EXERC01</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>EXERC01</h2>
+        <blockquote>
+            <p>Crie uma script em php que receba o formulário abaixo, converta todas as entradas para maiúscula e
+                ao final exibá um pequeno relatório das informações processadas.</p>
+            <footer>Dica: <cite title="Source Title"><a href="http://php.net/manual/pt_BR/function.strtoupper.php">strtoupper</a></cite></footer>
+        </blockquote>
+    </div>
+    <div class="container">
+        <form class="well" action="exerc.php" method="POST">
+            <div class="form-group">
+                <label class="inputName">Nome:</label>
+                <input type="text" class="form-control" id="inputName" name="firstname">
+            </div>
+            <div class="form-group">
+                <label class="inputLastName">Sobrenome:</label>
+                <input type="text" class="form-control" id="inputName" name="lastname">
+            </div>
+            <div class="form-group">
+                <label class="inputAddress">Endereço:</label>
+                <input type="text" class="form-control" id="inputAddress" name="address">
+            </div>
+            <div class="form-group">
+                <label class="inputNeighborhood">Bairro:</label>
+                <input type="text" class="form-control" id="inputNeighborhood" name="neighborhood">
+            </div>
+            <div class="form-group">
+                <label class="inputCity">Cidade:</label>
+                <input type="text" class="form-control" id="inputCity" name="city">
+            </div>
+            <div class="form-group">
+                <label class="inputState">Estado:</label>
+                <select name="state" class="form-control">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
